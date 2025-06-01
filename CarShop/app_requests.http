@@ -1,0 +1,32 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+GET https://localhost:7275/cars
+
+###
+GET https://localhost:7275/cars/1
+
+###
+POST https://localhost:7275/cars
+Content-type:application/json
+
+{
+  "Brand" : "Dacia", 
+  "Model" : "Spring", 
+  "CarTypeId" : 5, 
+  "Year" : 2024, 
+  "Color" : "Blue", 
+  "Price" : 15000.5, 
+  "NumberOfDoors" : 4, 
+  "IsElectric" : true
+}
+
+###
+PUT https://localhost:7275/cars/5 
+Content-type:application/json
+
+{
+  "Color" : "Red", 
+  "Price" : 15000.0
+}
+
+###
+DELETE https://localhost:7275/cars/1
